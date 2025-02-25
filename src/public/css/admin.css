@@ -1,0 +1,353 @@
+.contact-form__inner {
+    margin-bottom: 51px;
+}
+
+.contact-form__title {
+    font-size: 34px;
+    margin: 40px auto 29px;
+    text-align: center;
+}
+
+.main-wrapper{
+    margin: 0 auto 50px;
+    width: 1182px;
+}
+
+/** 検索フォーム **/
+.form-group__input {
+    flex: 0 0 auto;
+    padding: 14px 14px 14px 19px;
+    margin-right: 25px;
+    font-size: 16px;
+    font-family: 'Inika';
+    color: #8B7969;
+    background-color: #FBFBFB !important;
+    border:1px solid #E3DED9;
+    width: 348px;
+}
+
+.form-group__input:focus {
+    box-shadow: inset 0 0 0 1px #82756A;
+    outline: none;
+}
+
+input::placeholder{
+    color: #BEB1A6;
+    font-size: 16px;
+    font-family: 'Inika';
+}
+
+.form-group__select{   
+    padding: 15px 0 15px 21px;
+    font-size: 17px;
+    color: #8B7969;
+    background-color:#F4F4F4 ;
+    border:1px solid #E3DED9;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-group__select--shot{
+    width: 100px;
+}
+
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+    /* width: 100%; */
+  }
+
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 9px solid transparent;
+    border-left: 9px solid transparent;
+    border-top: 20px solid #E0DFDE;
+    border-bottom: 0;
+}
+
+/* 性別用 */
+.select-wrapper--short {
+    width: 100px;
+}
+
+.select-wrapper--short::after {
+    right: 16px;
+}
+
+/* お問い合わせ種類用 */
+.select-wrapper--long {
+    width: 224px;
+}
+
+.select-wrapper--long::after {
+    right: 15px;
+}
+
+.form-group__input--date{
+    position: relative;
+    padding: 12px 33px 11px 25px ;
+    margin-right: 24px;
+    font-size: 17px;
+    font-family: 'Inika';
+    color: #8B7969;
+    background-color:#F4F4F4 ;
+    border:1px solid #E3DED9;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-group__input--date::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 9px solid transparent;
+    border-left: 9px solid transparent;
+    border-top: 20px solid #E0DFDE;
+    border-bottom: 0;
+    right: 15px;
+}
+
+.form-group__input--date::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+    z-index: 100;
+}
+
+.search-form__button-group {
+    display: inline-flex;
+    white-space: nowrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form__submit {
+    width: 102px;
+    padding: 11px 0;
+    background-color: #82756A;
+    color: white;
+    border: 1px solid #8B7969;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+}
+
+.search-form__reset {
+    width: 102px;
+    padding: 11px 0;
+    background-color: #D9C6B5;
+    color: white;
+    border: 1px solid #D9C6B5;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+}
+
+/** コンタクト情報一覧 **/
+table.contact-list{
+    font-family: 'Inika';
+    border-collapse: collapse;
+}
+
+table.contact-list thead tr {
+    height: 60px;
+    border: 1px solid #E0DFDE;
+}
+
+table.contact-list thead th{
+    background-color: #8B7969;
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+}
+
+table.contact-list tbody tr{
+    height: 73px;
+    border: 1px solid #E0DFDE;
+}
+
+table.contact-list th, table td {
+    border: none;
+}
+
+/* ”名前”にのみ適用 */
+table.contact-list th:nth-child(1),
+table.contact-list td:nth-child(1) {
+  padding-left: 55px;
+}
+
+/* ”名前”以外に適用 */
+table.contact-list th:nth-child(n+2),
+table.contact-list td:nth-child(n+2) {
+    padding-left: 5px;
+}
+.col-name{
+    width: 230px;
+}
+
+.col-gender{
+    width: 160px;
+}
+
+.col-email{
+    width: 280px;
+}
+
+.col-category{
+    width: 360px;
+}
+
+.col-detail{
+    width: 150px;
+}
+.contact-detail {
+    background: #F4F4F44D;
+    color: #D9C6B5;
+    border: 1px solid #D9C6B599;
+    cursor: pointer;
+    padding: 8px 0;
+    font-size: 18px;
+    width: 76px;
+}
+
+/** 詳細モーダル **/
+.modal-background{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:9999;
+}
+
+.modal-main{
+    position: relative;
+    margin: 5% auto;
+    background: #fff;
+    border: 1px solid #8B7969;
+    box-shadow: 4px 4px 4px #8B796940;
+    /* width: 80%; */
+    max-width: 805px;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.modal-close-wrapper {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 10;
+}
+
+.modal-close {
+    background: #fff;
+    border: 1px solid #8B7969;
+    border-radius: 50%;
+    width: 40px;
+    height: 42px;
+    font-size: 30px;
+    color: #8B7969;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+}
+
+.modal-detail{
+    display: grid;
+    grid-template-columns: 180px auto;  /* 左側はラベル、右側はデータ */
+    gap: 35px;
+    padding: 133px 0 0 100px;
+    width: 100%;
+}
+
+.modal-detail-label{
+    font-weight: 700;
+}
+
+.contact-delete-wrapper{
+    margin: 114px auto 77px;
+    text-align: center;
+}
+
+.contact-delete{
+    background: #BA370D;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 0;
+    font-size: 18px;
+    width: 76px;
+}
+
+/** ページネーション **/
+.pagination-wrapper {
+    text-align: right;
+    margin: 41px 0 27px;
+    min-height: 27px;
+}
+
+.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.pagination .page-item {
+    display: inline;
+}
+
+.pagination .page-link {
+    color: #8B7969;
+    padding: 4px 12px;
+    margin: 0;
+    border: 1px solid #E0DFDE;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #8B7969;
+    color: #fff;
+    border-color: #82756A;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #ccc;
+    pointer-events: none;
+}
+
+.pagination .page-item:first-child .page-link {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination .page-item:last-child .page-link {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nodata{
+    margin-top: 10%;
+    font-size: 24px;
+    text-align: center;
+}
+

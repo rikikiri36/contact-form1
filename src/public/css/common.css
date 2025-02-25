@@ -1,0 +1,33 @@
+header{
+    font-family: 'Inika';
+}
+
+body {
+    font-family: 'Inika';
+    color: #8B7969;
+    font-weight: 400;
+}
+
+.header__inner {
+    margin: 0 auto;
+    height: 100px;
+    line-height: 100px;
+    /* max-width: 1230px; */
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #E0DFDE;
+}
+  
+.header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.content__title{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+}

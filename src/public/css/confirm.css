@@ -1,0 +1,74 @@
+.contact-form__inner {
+    margin-bottom: 51px;
+}
+
+.contact-form__title {
+    font-size: 34px;
+    margin: 51px auto;
+    text-align: center;
+}
+
+table{
+    margin: 51px auto;
+    font-family: 'Inika';
+}
+
+table tr {
+    height: 70px;
+}
+
+table td {
+    border: 1px solid #E0DFDE;
+}
+
+/* １列目 */
+table tr td:first-child {
+    background-color: #BAA899;
+    color: #fff;
+    padding-left: 62px;
+    width: 305px;
+}
+
+/* ２列目 */
+table tr td:nth-child(2) {
+    width: 567px;
+    padding-left: 47px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+  }
+
+.contact-form__submit {
+    width: 120px;
+    padding: 8px 0;
+    background-color: #82756A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Inika';
+    font-size: 20px;
+}
+/* 
+width: 160px;
+padding: 0.75rem;
+background-color: #82756A;
+color: white;
+border: none;
+cursor: pointer;
+text-align: center; */
+
+.contact-form__edit {
+    background: none;
+    border: none;
+    color: #8B7969;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Inika';
+}
